@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<EarlsBurgerContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("EarlsBurgerContext") ?? throw new InvalidOperationException("Connection string 'EarlsBurgerContext' not found.")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("EarlsBurgerContext") ?? throw new InvalidOperationException("Connection string 'EarlsBurgerContext' not found.")));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 var app = builder.Build();
 
@@ -31,6 +31,8 @@ using (var scope = app.Services.CreateScope())
 
     var context = services.GetRequiredService<EarlsBurgerContext>();
     context.Database.EnsureCreated();
+    context.Database.Migrate();
+    DbInitializer.Initialize(context);
     //DbInitializer.Initialize(Context);
 }
 

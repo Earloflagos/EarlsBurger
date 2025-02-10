@@ -9,89 +9,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9527957-1aac-41dd-a1f2-4ae3818add82" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.EarlsBurger/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.EarlsBurger/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.EarlsBurger/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.EarlsBurger/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/EarlsBurger.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/Models/Fooditem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Error.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Error.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Index.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Privacy.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Privacy.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Shared/_Layout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Shared/_Layout.cshtml.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/Pages/_ViewImports.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/Pages/_ViewStart.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/css/site.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/js/site.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/jquery-validation/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/jquery-validation/dist/additional-methods.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/jquery-validation/dist/jquery.validate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/jquery/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/jquery/dist/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/jquery/dist/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/lib/jquery/dist/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EarlsBurger/Data/DbInitializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EarlsBurger/Pages/ABoutUs.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EarlsBurger/Pages/ABoutUs.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Contact.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Contact.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EarlsBurger/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EarlsBurger/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/EarlsBurger.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/EarlsBurger.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Index.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +34,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Earloflagos&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Earloflagos/EarlsBurger.git&quot;,
+    &quot;accountId&quot;: &quot;52fa748a-935a-4385-bfdc-890629258113&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -113,23 +55,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.EarlsBurger: http.executor": "Run",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.EarlsBurger: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.EarlsBurger: https.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Publish to custom server.Publish EarlsBurger to custom server (1).executor&quot;: &quot;Run&quot;,
+    &quot;Publish to custom server.Publish EarlsBurger to custom server (2).executor&quot;: &quot;Run&quot;,
+    &quot;Publish to custom server.Publish EarlsBurger to custom server.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.EarlsBurger: http">
+    <configuration name="Publish EarlsBurger to custom server (1)" type="DotNetPublishAndUpload" factoryName="Publish to custom server">
+      <riderPublish configuration="Release" platform="Any CPU" runtime="Portable" server_id="007fc9fc-0220-4571-9a7a-a557dd90906f" serverName="plesk.chester.network" target_framework="net8.0" uuid_high="1192945277166371977" uuid_low="-6400116188168267243" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish EarlsBurger to custom server (2)" type="DotNetPublishAndUpload" factoryName="Publish to custom server">
+      <riderPublish configuration="Release" platform="Any CPU" runtime="Portable" server_id="007fc9fc-0220-4571-9a7a-a557dd90906f" serverName="plesk.chester.network" target_framework="net8.0" uuid_high="1192945277166371977" uuid_low="-6400116188168267243" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish EarlsBurger to custom server" type="DotNetPublishAndUpload" factoryName="Publish to custom server">
+      <riderPublish configuration="Release" platform="Any CPU" runtime="Portable" server_id="007fc9fc-0220-4571-9a7a-a557dd90906f" serverName="plesk.chester.network" target_framework="net8.0" uuid_high="1192945277166371977" uuid_low="-6400116188168267243" />
+      <method v="2" />
+    </configuration>
     <configuration name="EarlsBurger: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/EarlsBurger/EarlsBurger.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -170,7 +127,10 @@
       <option name="presentableId" value="Default" />
       <updated>1729624950941</updated>
       <workItem from="1729624952143" duration="9914000" />
-      <workItem from="1729679647872" duration="4660000" />
+      <workItem from="1729679647872" duration="28846000" />
+      <workItem from="1730365643302" duration="343000" />
+      <workItem from="1731341570072" duration="8029000" />
+      <workItem from="1731947463756" duration="4531000" />
     </task>
     <servers />
   </component>
@@ -178,6 +138,23 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.Identity.Client" />
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.EntityFrameworkCore.Abstractions" />
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.EntityFrameworkCore.Relational" />
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.EntityFrameworkCore" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

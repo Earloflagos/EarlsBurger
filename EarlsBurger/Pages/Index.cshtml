@@ -1,10 +1,69 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+ViewData["Title"] = "Home page";
 }
+<section class="hero">
+    <img src="~/images/burger3.jpg" alt="Burger Image" class="hero-background">
+    <div class="hero-text">
+        <h1>Earls Burger</h1>
+        <p>Handcrafted bread made with passion and quality ingredients.</p>
+        <a href="#menu" class="btn">Order Now</a>
+    </div>
+</section>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="featured-products" id="menu">
+    <h2>Customer Favorites</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img src="~/images/Cheeseburger.jpeg" alt="">
+            <h3>Earls Cheeseburger</h3>
+            <p>$5.00</p>
+        </div>
+        <div class="product">
+            <img src="~/images/Chicken burger.jpeg" alt="">
+            <h3>Earls ChickenBurger</h3>
+            <p>$2.50</p>
+        </div>
+        <div class="product">
+            <img src="~/images/veggieburger.jpeg" alt="">
+            <h3>Earls VeggieBurger</h3>
+            <p>$3.00</p>
+        </div>
+        <div class="product">
+            <img src="~/images/DoublePattyburger.jpeg" alt="">
+            <h3>Earls Double</h3>
+            <p>$4.00</p>
+        </div>
+        <div class="product">
+            <img src="~/images/Fishburger.jpeg" alt="">
+            <h3>Earls FishBurger</h3>
+            <p>$2.00</p>
+        </div>
+        <div class="product">
+            <img src="~/images/Earls specialburger.jpeg" alt="">
+            <h3>Earls Special</h3>
+            <p>$2.75</p>
+        </div>
+        <div class="product">
+            <img src="~/images/BeefnBaconBurger.jpeg" alt="">
+            <h3>Earls BnB</h3>
+            <p>$6.00</p>
+        </div>
+        <div class="product">
+            <img src="~/images/Crepe Burger.jpeg" alt="">
+            <h3>Earls Crepe</h3>
+            <p>$1.50</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2024 Earls Burger. All rights reserved.</p>
+    <nav class="footer-nav">
+        <a href="#about">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</footer>
+
