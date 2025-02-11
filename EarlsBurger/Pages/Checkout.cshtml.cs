@@ -1,19 +1,34 @@
-﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace EarlsBurger.Pages;
 
-public class PrivacyModel : PageModel
+public class Checkout : PageModel
 {
-    private readonly ILogger<PrivacyModel> _logger;
+   
+        public List<CartItem> CartItems { get; set; }
+        public decimal Total { get; set; }
 
-    public PrivacyModel(ILogger<PrivacyModel> logger)
-    {
-        _logger = logger;
+        public void OnGet()
+        {
+            CartItems = GetCartItems();
+            Total = CartItems.Sum(item => item.Subtotal);
+        }
+
+        private List<CartItem> GetCartItems()
+        {
+            
+            return new List<CartItem>
+            {
+                new CartItem { Name = "Burger", Quantity = 2, Price = 5.99m },
+                new CartItem { Name = "Fries", Quantity = 1, Price = 2.99m }
+            };
+        }
     }
 
-    public void OnGet()
+    public class CartItem
     {
+        public string Name { get; set; }
+        public int Quantity { get; set; }
+        public decimal Price { get; set; }
+        public decimal Subtotal => Quantity * Price;
     }
-}
-

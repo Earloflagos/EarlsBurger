@@ -1,12 +1,26 @@
 @page
 @model EarlsBurger.Pages.Admin
+
 @{
-ViewData["Title"] = "About Us";
+    ViewData["Title"] = "Admin Dashboard";
 }
 
-<section class="about-us">
-    <h2>@ViewData["Title"]</h2>
-    <img src="~/images/restaurant.jpg" alt="Earls Burger Restaurant" class="about-us-image">
-    <p>Earls Burger was founded in [Year] with a passion for creating the best handcrafted burgers in town...</p>
-    <!-- Add more details about your restaurant's history, mission, and values -->
-</section>
+<h2>@ViewData["Title"]</h2>
+
+<div class="admin-dashboard">
+    <section class="admin-section">
+        <h3>Manage Menu Items</h3>
+        <a asp-page="/Admin/AddMenuItem" class="btn btn-primary">Add New Menu Item</a>
+        <a asp-page="/Admin/EditMenuItems" class="btn btn-secondary">Edit Menu Items</a>
+    </section>
+
+    <section class="admin-section">
+        <h3>Manage Orders</h3>
+        <a asp-page="/Admin/ViewOrders" class="btn btn-info">View Orders</a>
+    </section>
+
+    <section class="admin-section">
+        <h3>User Management</h3>
+        <a asp-page="/Admin/ManageUsers" class="btn btn-warning">Manage Users</a>
+    </section>
+</div>
