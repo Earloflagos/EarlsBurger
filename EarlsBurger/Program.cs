@@ -9,10 +9,19 @@ builder.Services.AddRazorPages();
 builder.Services.AddDbContext<EarlsBurgerContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("EarlsBurgerContext") ?? throw new InvalidOperationException("Connection string 'EarlsBurgerContext' not found.")));
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<EarlsBurgerContext>();
+//builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<EarlsBurgerContext>();
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-var app = builder.Build();
 
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(
+        options =>
+        {
+            options.Stores.MaxLengthForKeys = 128;
+        })
+    .AddEntityFrameworkStores<EarlsBurgerContext>()
+    .AddRoles<IdentityRole>()
+    .AddDefaultUI()
+    .AddDefaultTokenProviders();
+var app = builder.Build(); 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -47,5 +56,14 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<EarlsBurgerContext>();
+    context.Database.Migrate();
+    var userMgr = services.GetRequiredService<UserManager<IdentityUser>>();
+    var roleMgr = services.GetRequiredService<RoleManager<IdentityRole>>();
+    IdentitySeedData.Initialize(context, userMgr, roleMgr).Wait();
+}
 
 app.Run();
