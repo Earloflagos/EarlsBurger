@@ -1,12 +1,15 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using EarlsBurger.Data;
+using Microsoft.AspNetCore.Identity;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<EarlsBurgerContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("EarlsBurgerContext") ?? throw new InvalidOperationException("Connection string 'EarlsBurgerContext' not found.")));
+
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<EarlsBurgerContext>();
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 var app = builder.Build();
 

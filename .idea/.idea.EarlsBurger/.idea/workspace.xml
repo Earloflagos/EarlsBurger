@@ -8,14 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9527957-1aac-41dd-a1f2-4ae3818add82" name="Changes" comment="layout edit">
-      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/ABoutUs.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Admin.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/ABoutUs.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Admin.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Error.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Login.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Error.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Login.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Privacy.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Checkout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Privacy.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Checkout.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Shared/_Layout.cshtml" afterDir="false" />
+    <list default="true" id="b9527957-1aac-41dd-a1f2-4ae3818add82" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EarlsBurger/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EarlsBurger/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Data/EarlsBurgerContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Data/EarlsBurgerContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/EarlsBurger.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/EarlsBurger.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +30,12 @@
     &quot;assignee&quot;: &quot;Earloflagos&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Earloflagos/EarlsBurger.git",
-    "accountId": "758731e9-c4aa-423e-8332-ad2f16b2e66a"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Earloflagos/EarlsBurger.git&quot;,
+    &quot;accountId&quot;: &quot;758731e9-c4aa-423e-8332-ad2f16b2e66a&quot;
   }
-}]]></component>
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -50,25 +46,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.EarlsBurger: http.executor": "Run",
-    ".NET Launch Settings Profile.EarlsBurger: https.executor": "Run",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Publish to custom server.Publish EarlsBurger to custom server (1).executor": "Run",
-    "Publish to custom server.Publish EarlsBurger to custom server (2).executor": "Run",
-    "Publish to custom server.Publish EarlsBurger to custom server.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.EarlsBurger: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.EarlsBurger: https.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Publish to custom server.Publish EarlsBurger to custom server (1).executor&quot;: &quot;Run&quot;,
+    &quot;Publish to custom server.Publish EarlsBurger to custom server (2).executor&quot;: &quot;Run&quot;,
+    &quot;Publish to custom server.Publish EarlsBurger to custom server.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.EarlsBurger: http">
     <configuration name="Publish EarlsBurger to custom server (1)" type="DotNetPublishAndUpload" factoryName="Publish to custom server">
       <riderPublish configuration="Release" platform="Any CPU" runtime="Portable" server_id="007fc9fc-0220-4571-9a7a-a557dd90906f" serverName="plesk.chester.network" target_framework="net8.0" uuid_high="1192945277166371977" uuid_low="-6400116188168267243" />
@@ -126,7 +122,8 @@
       <workItem from="1730365643302" duration="343000" />
       <workItem from="1731341570072" duration="8029000" />
       <workItem from="1731947463756" duration="4531000" />
-      <workItem from="1738927949014" duration="14313000" />
+      <workItem from="1738927949014" duration="18935000" />
+      <workItem from="1739296353261" duration="1713000" />
     </task>
     <task id="LOCAL-00001" summary="layout edit">
       <option name="closed" value="true" />
@@ -152,7 +149,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739199078583</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Login settings">
+      <option name="closed" value="true" />
+      <created>1739213352154</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739213352154</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Login">
+      <option name="closed" value="true" />
+      <created>1739296333498</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739296333498</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +206,9 @@
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="layout edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="layout edit" />
+    <MESSAGE value="Login settings" />
+    <MESSAGE value="Login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

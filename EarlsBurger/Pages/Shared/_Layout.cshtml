@@ -29,18 +29,8 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Menu/Index">Menu</a>
                         </li>
                     </ul>
-                    @if (ViewContext.RouteData.Values["Page"].ToString() ==
-                         "/EarlsBurger")
-                    {
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/Account/Login">Sign in</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/Account/Register">Sign Up</a>
-                            </li>
-                        </ul>
-                    }
+                    <partial name = *_LoginPartial* />
+                   }
                 </div>
             </div>
         </nav>
