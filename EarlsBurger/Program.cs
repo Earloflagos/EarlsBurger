@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using EarlsBurger.Data;
 using Microsoft.AspNetCore.Identity;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -11,6 +11,17 @@ builder.Services.AddDbContext<EarlsBurgerContext>(options =>
 
 //builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<EarlsBurgerContext>();
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+builder.Services.AddAuthentication();
+builder.Services.AddAuthorization(options=>
+{
+    options.AddPolicy("RequireAdmins", policy => policy.RequireRole("Admin"));
+
+});
+builder.Services.AddRazorPages()
+    .AddRazorPagesOptions(options =>
+    {
+        options.Conventions.AuthorizeFolder("/Admin", "RequireAdmins");
+    });
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(
         options =>
@@ -21,7 +32,9 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(
     .AddRoles<IdentityRole>()
     .AddDefaultUI()
     .AddDefaultTokenProviders();
+
 var app = builder.Build(); 
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -34,27 +47,10 @@ else
     app.UseDeveloperExceptionPage();
     app.UseMigrationsEndPoint();
 }
-{
-
-}
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-
-    var context = services.GetRequiredService<EarlsBurgerContext>();
-    context.Database.EnsureCreated();
-    context.Database.Migrate();
-    DbInitializer.Initialize(context);
-    //DbInitializer.Initialize(Context);
-}
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
-app.UseAuthorization();
-
 app.MapRazorPages();
 using (var scope = app.Services.CreateScope())
 {
@@ -65,5 +61,5 @@ using (var scope = app.Services.CreateScope())
     var roleMgr = services.GetRequiredService<RoleManager<IdentityRole>>();
     IdentitySeedData.Initialize(context, userMgr, roleMgr).Wait();
 }
-
+app.UseAuthorization();
 app.Run();

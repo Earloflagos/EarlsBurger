@@ -11,17 +11,18 @@ namespace EarlsBurger.Data
             context.Database.EnsureCreated();
             string adminRole = "Admin";
             string memberRole = "Member";
-            string password4all = "p@55word";
+            string password4all = "P@55word";
 
             if (await roleManager.FindByNameAsync(adminRole) == null)
             {
                 await roleManager.CreateAsync(new IdentityRole(adminRole));
             }
 
-            if (await roleManager.FindByNameAsync(memberRole) == null) ;
+            if (await roleManager.FindByNameAsync(memberRole) == null)
             {
                 await roleManager.CreateAsync(new IdentityRole(memberRole));
             }
+
             if (await userManager.FindByNameAsync("admin@ucm.ac.im") == null)
             {
                 var user = new IdentityUser
@@ -55,6 +56,7 @@ namespace EarlsBurger.Data
             }
         }
     }
+
 
 }
     

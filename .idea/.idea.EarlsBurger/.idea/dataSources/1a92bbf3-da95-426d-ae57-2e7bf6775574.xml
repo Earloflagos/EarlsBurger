@@ -16745,7 +16745,7 @@
     <table id="5554" parent="5551" name="Fooditem">
       <CreatedTimestamp>2024-10-25.14:09:39.740</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-25.14:09:39.740</ModifiedTimestamp>
+      <ModifiedTimestamp>2025-02-18.14:42:06.803</ModifiedTimestamp>
       <ObjectId>901578250</ObjectId>
       <LedgerViewId>0</LedgerViewId>
       <LobDataSpaceId>0</LobDataSpaceId>
@@ -16761,7 +16761,7 @@
     <column id="5556" parent="5554" name="ID">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1(1003)</SequenceIdentity>
+      <SequenceIdentity>1(2002)</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
     <column id="5557" parent="5554" name="Item_name">
@@ -16784,38 +16784,46 @@
       <Position>6</Position>
       <StoredType>money|0s</StoredType>
     </column>
-    <index id="5562" parent="5554" name="PK_Fooditem">
+    <column id="5562" parent="5554" name="ImageDescription">
+      <Position>7</Position>
+      <StoredType>nvarchar(1 char)|0s</StoredType>
+    </column>
+    <column id="5563" parent="5554" name="ImageData">
+      <Position>8</Position>
+      <StoredType>varbinary(1 char)|0s</StoredType>
+    </column>
+    <index id="5564" parent="5554" name="PK_Fooditem">
       <Clustering>1</Clustering>
       <ColNames>ID</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5563" parent="5554" name="PK_Fooditem">
+    <key id="5565" parent="5554" name="PK_Fooditem">
       <CreatedTimestamp>2024-10-25.14:09:39.747</CreatedTimestamp>
       <ModifiedTimestamp>2024-10-25.14:09:39.747</ModifiedTimestamp>
       <ObjectId>917578307</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_Fooditem</UnderlyingIndexName>
     </key>
-    <column id="5564" parent="5555" name="MigrationId">
+    <column id="5566" parent="5555" name="MigrationId">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>nvarchar(150 char)|0s</StoredType>
     </column>
-    <column id="5565" parent="5555" name="ProductVersion">
+    <column id="5567" parent="5555" name="ProductVersion">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>nvarchar(32 char)|0s</StoredType>
     </column>
-    <index id="5566" parent="5555" name="PK___EFMigrationsHistory">
+    <index id="5568" parent="5555" name="PK___EFMigrationsHistory">
       <Clustering>1</Clustering>
       <ColNames>MigrationId</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5567" parent="5555" name="PK___EFMigrationsHistory">
+    <key id="5569" parent="5555" name="PK___EFMigrationsHistory">
       <CreatedTimestamp>2024-10-25.14:30:17.210</CreatedTimestamp>
       <ModifiedTimestamp>2024-10-25.14:30:17.210</ModifiedTimestamp>
       <ObjectId>949578421</ObjectId>

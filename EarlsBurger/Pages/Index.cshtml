@@ -2,12 +2,17 @@
 @model IndexModel
 @{
 ViewData["Title"] = "Home page";
+var inMemberRole = User.IsInRole("Member");
+var inAdminRole = User.IsInRole("Admin");
 }
+<body>
 <section class="hero">
     <img src="~/images/burger3.jpg" alt="Burger Image" class="hero-background">
     <div class="hero-text">
         <h1>Earls Burger</h1>
-        <p>Handcrafted bread made with passion and quality ingredients.</p>
+        <p>Handcrafted burgers made with passion and quality ingredients.</p>
+        <p> Is Admin: @inAdminRole</p>
+        <p>Is Member: @inMemberRole</p>
         <a href="#menu" class="btn">Order Now</a>
     </div>
 </section>
@@ -15,55 +20,113 @@ ViewData["Title"] = "Home page";
 <section class="featured-products" id="menu">
     <h2>Customer Favorites</h2>
     <div class="product-grid">
-        <div class="product">
-            <img src="~/images/Cheeseburger.jpeg" alt="">
-            <h3>Earls Cheeseburger</h3>
-            <p>$5.00</p>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var tblFoodItems in Model.FoodItem)
+            {
+                <tr>
+                    <td>@tblFoodItems.ID</td>
+                    <td><img src="~/images/@(tblFoodItems.Item_name).jpeg" alt="@tblFoodItems.Item_name"></td>
+                    <td>@tblFoodItems.Item_name</td>
+                    <td>@tblFoodItems.Item_desc</td>
+                    <td>@tblFoodItems.Price</td>
+                </tr>
+            }
+            <tr>
+                <td>BRG001</td>
+                <td><img src="~/images/Cheeseburger.jpeg" alt="Earls Cheeseburger"></td>
+                <td>Earls Cheeseburger</td>
+                <td>Classic beef patty topped with melted cheese</td>
+                <td>$5.00</td>
+            </tr>
+            <tr>
+                <td>BRG002</td>
+                <td><img src="~/images/Chicken burger.jpeg" alt="Earls ChickenBurger"></td>
+                <td>Earls ChickenBurger</td>
+                <td>Crispy chicken fillet with fresh lettuce and mayo</td>
+                <td>$2.50</td>
+            </tr>
+            <tr>
+                <td>BRG003</td>
+                <td><img src="~/images/veggieburger.jpeg" alt="Earls VeggieBurger"></td>
+                <td>Earls VeggieBurger</td>
+                <td>Plant-based patty with assorted vegetables</td>
+                <td>$3.00</td>
+            </tr>
+            <tr>
+                <td>BRG004</td>
+                <td><img src="~/images/DoublePattyburger.jpeg" alt="Earls Double"></td>
+                <td>Earls Double</td>
+                <td>Two juicy beef patties stacked with cheese</td>
+                <td>$4.00</td>
+            </tr>
+            <tr>
+                <td>BRG005</td>
+                <td><img src="~/images/Fishburger.jpeg" alt="Earls FishBurger"></td>
+                <td>Earls FishBurger</td>
+                <td>Breaded fish fillet with tartar sauce</td>
+                <td>$2.00</td>
+            </tr>
+            <tr>
+                <td>BRG006</td>
+                <td><img src="~/images/Earls specialburger.jpeg" alt="Earls Special"></td>
+                <td>Earls Special</td>
+                <td>Secret recipe burger with unique toppings</td>
+                <td>$2.75</td>
+            </tr>
+            <tr>
+                <td>BRG007</td>
+                <td><img src="~/images/BeefnBaconBurger.jpeg" alt="Earls BnB"></td>
+                <td>Earls BnB</td>
+                <td>Beef patty topped with crispy bacon strips</td>
+                <td>$6.00</td>
+            </tr>
+            <tr>
+                <td>BRG008</td>
+                <td><img src="~/images/Crepe Burger.jpeg" alt="Earls Crepe"></td>
+                <td>Earls Crepe</td>
+                <td>Unique burger wrapped in a thin crepe</td>
+                <td>$1.50</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="Flex-container">
+            @foreach (var tblFoodItems in Model.FoodItem)
+            {
+                <div>
+                    <p>@Html.DisplayFor(modelItem => tblFoodItems.Item_name)</p>
+                    <p>@Html.DisplayFor(modelItem => tblFoodItems.Price)</p>
+                    <p>@Html.DisplayFor(modelItem => tblFoodItems.Item_desc)</p>
+                    <p>@Html.DisplayFor(modelItem => tblFoodItems.ID)</p>
+                </div>
+            }
         </div>
-        <div class="product">
-            <img src="~/images/Chicken burger.jpeg" alt="">
-            <h3>Earls ChickenBurger</h3>
-            <p>$2.50</p>
-        </div>
-        <div class="product">
-            <img src="~/images/veggieburger.jpeg" alt="">
-            <h3>Earls VeggieBurger</h3>
-            <p>$3.00</p>
-        </div>
-        <div class="product">
-            <img src="~/images/DoublePattyburger.jpeg" alt="">
-            <h3>Earls Double</h3>
-            <p>$4.00</p>
-        </div>
-        <div class="product">
-            <img src="~/images/Fishburger.jpeg" alt="">
-            <h3>Earls FishBurger</h3>
-            <p>$2.00</p>
-        </div>
-        <div class="product">
-            <img src="~/images/Earls specialburger.jpeg" alt="">
-            <h3>Earls Special</h3>
-            <p>$2.75</p>
-        </div>
-        <div class="product">
-            <img src="~/images/BeefnBaconBurger.jpeg" alt="">
-            <h3>Earls BnB</h3>
-            <p>$6.00</p>
-        </div>
-        <div class="product">
-            <img src="~/images/Crepe Burger.jpeg" alt="">
-            <h3>Earls Crepe</h3>
-            <p>$1.50</p>
-        </div>
+        <h2>Search</h2>
+        <form method="post">
+            <div>Search <input asp-for="Search" /></div>
+            <button type="submit" asp-page-handler="Search">Submit</button>
+        </form>
     </div>
 </section>
 
 <footer class="footer">
-    <p>&copy; 2024 Earls Burger. All rights reserved.</p>
+    <p>&copy; 2025 Earls Burger. All rights reserved.</p>
     <nav class="footer-nav">
         <a href="#about">About Us</a>
         <a href="#menu">Menu</a>
         <a href="#contact">Contact</a>
     </nav>
 </footer>
+</body>
+
+
 

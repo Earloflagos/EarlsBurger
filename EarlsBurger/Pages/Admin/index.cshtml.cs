@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace EarlsBurger.Pages;
+namespace EarlsBurger.Pages.Admin;
 
-public class Admin : PageModel
+public class index : PageModel
 {
     public void OnGet()
     {
