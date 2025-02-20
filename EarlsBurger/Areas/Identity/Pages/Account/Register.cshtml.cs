@@ -1,23 +1,18 @@
 // Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 #nullable disable
-
-using System;
-using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
 using System.Text;
 using System.Text.Encodings.Web;
-using System.Threading;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
-using Microsoft.Extensions.Logging;
+
+using EarlsBurger.Data;
 
 namespace EarlsBurger.Areas.Identity.Pages.Account
 {
@@ -30,12 +25,17 @@ namespace EarlsBurger.Areas.Identity.Pages.Account
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
 
+
+        private EarlsBurgerContext _db;
+        public EarlsBurgerContext.CheckoutCustomer Customer = new EarlsBurgerContext.CheckoutCustomer();
+        public EarlsBurgerContext.Basket Basket = new EarlsBurgerContext.Basket();
         public RegisterModel(
             UserManager<IdentityUser> userManager,
             IUserStore<IdentityUser> userStore,
             SignInManager<IdentityUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            EarlsBurgerContext db)
         {
             _userManager = userManager;
             _userStore = userStore;
@@ -43,6 +43,7 @@ namespace EarlsBurger.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _db = db;
         }
 
         /// <summary>
@@ -141,6 +142,8 @@ namespace EarlsBurger.Areas.Identity.Pages.Account
                     else
                     {
                         await _signInManager.SignInAsync(user, isPersistent: false);
+                        NewBasket();
+                        NewCustomer(Input.Email);
                         return LocalRedirect(returnUrl);
                     }
                 }
@@ -152,6 +155,33 @@ namespace EarlsBurger.Areas.Identity.Pages.Account
 
             // If we got this far, something failed, redisplay form
             return Page();
+        }
+
+        public void NewBasket()
+        {
+            var currentBasket = _db.Baskets.FromSqlRaw("SELECT * FROM Baskets")
+                .OrderByDescending(b => b.BasketID)
+                .FirstOrDefault();
+            if (currentBasket == null)
+            {
+                Basket.BasketID = 1;
+            }
+            else
+            {
+                Basket.BasketID = currentBasket.BasketID + 1;
+            }
+
+            _db.Baskets.Add(Basket);
+            _db.SaveChanges();
+            
+        }
+
+        public void NewCustomer(string email)
+        {
+            Customer.Email = Input.Email;
+            Customer.BasketID = Basket.BasketID;
+            _db.CheckoutCustomers.Add(Customer);
+            _db.SaveChanges();
         }
 
         private IdentityUser CreateUser()

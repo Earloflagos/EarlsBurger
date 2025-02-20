@@ -9,11 +9,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9527957-1aac-41dd-a1f2-4ae3818add82" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Privacy.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Privacy.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EarlsBurger/.idea/dataSources/8ffd0b59-ddf4-45ea-8bb3-4f8ddf412d3c.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EarlsBurger/.idea/dataSources/8ffd0b59-ddf4-45ea-8bb3-4f8ddf412d3c/storage_v2/_src_/database/db_2200680_earlsburger.gG_w1w.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EarlsBurger/.idea/dataSources/8ffd0b59-ddf4-45ea-8bb3-4f8ddf412d3c/storage_v2/_src_/database/db_2200680_earlsburger.gG_w1w/schema/dbo.sYMBAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EarlsBurger/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EarlsBurger/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Data/IdentitySeedData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Data/IdentitySeedData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/EarlsBurger.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/EarlsBurger.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Index.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Menu/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Menu/Index.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +133,8 @@
       <workItem from="1739296353261" duration="8730000" />
       <workItem from="1739358499918" duration="9409000" />
       <workItem from="1739377559070" duration="5412000" />
+      <workItem from="1739974794795" duration="5501000" />
+      <workItem from="1739980320822" duration="1016000" />
     </task>
     <task id="LOCAL-00001" summary="layout edit">
       <option name="closed" value="true" />

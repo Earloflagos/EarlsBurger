@@ -1,34 +1,43 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using EarlsBurger.Data;
+using EarlsBurger.Models;
 
 namespace EarlsBurger.Pages;
 
 public class Checkout : PageModel
 {
-   
-        public List<CartItem> CartItems { get; set; }
-        public decimal Total { get; set; }
+   private readonly EarlsBurgerContext _db;
+   private readonly UserManager<IdentityUser> _UserManager;
+   public IList<CheckoutItem> Items { get; private set; }
 
-        public void OnGet()
-        {
-            CartItems = GetCartItems();
-            Total = CartItems.Sum(item => item.Subtotal);
-        }
+   public decimal Total;
+   public long AmountPayable;
 
-        private List<CartItem> GetCartItems()
-        {
-            
-            return new List<CartItem>
-            {
-                new CartItem { Name = "Burger", Quantity = 2, Price = 5.99m },
-                new CartItem { Name = "Fries", Quantity = 1, Price = 2.99m }
-            };
-        }
-    }
+   public Checkout(EarlsBurgerContext db, UserManager<IdentityUser> UserManager)
+   {
+      _db = db;
+      _UserManager = UserManager;
+   }
 
-    public class CartItem
-    {
-        public string Name { get; set; }
-        public int Quantity { get; set; }
-        public decimal Price { get; set; }
-        public decimal Subtotal => Quantity * Price;
-    }
+   public async Task OnGetAsync()
+   {
+      var user = await _UserManager.GetUserAsync(User);
+      EarlsBurgerContext.CheckoutCustomer customer = await _db.CheckoutCustomers.FindAsync(user.Email);
+      Items = _db.CheckoutItems.FromSqlRaw(
+         "SELECT FoodItem.ID, FoodItem.Price, " +
+         "FoodItem.Item_name, " +
+         "BasketItems.BasketID, BasketItems.Quantity " +
+         "FROM FoodItem INNER JOIN BasketItems " +
+         "ON FoodItem.ID = BasketItems.StockID " + 
+         "WHERE BasketID {0}", customer.BasketID
+         ).ToList();
+      Total = 0;
+      foreach (var item in Items)
+      {
+         Total += (item.Quantity * item.Price);
+      }
+      AmountPayable = (long)Total;
+   }
+}

@@ -4,7 +4,7 @@ namespace EarlsBurger.Data
 {
     public class IdentitySeedData
     {
-        public static async Task Initialize(EarlsBurgerContext context,
+            public static async Task Initialize(EarlsBurgerContext context,
             UserManager<IdentityUser> userManager,
             RoleManager<IdentityRole> roleManager)
         {

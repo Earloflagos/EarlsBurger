@@ -7,11 +7,23 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<EarlsBurgerContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("EarlsBurgerContext") ?? throw new InvalidOperationException("Connection string 'EarlsBurgerContext' not found.")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("EarlsBurgerContext") ?? throw new 
+        InvalidOperationException("Connection string 'EarlsBurgerContext' not found.")));
 
-//builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<EarlsBurgerContext>();
+//builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true
+//).AddEntityFrameworkStores<EarlsBurgerContext>();
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(
+        options =>
+        {
+            options.Stores.MaxLengthForKeys = 128;
+        })
+    .AddEntityFrameworkStores<EarlsBurgerContext>()
+    .AddRoles<IdentityRole>()
+    .AddDefaultUI()
+    .AddDefaultTokenProviders();
+
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-builder.Services.AddAuthentication();
+
 builder.Services.AddAuthorization(options=>
 {
     options.AddPolicy("RequireAdmins", policy => policy.RequireRole("Admin"));
@@ -23,15 +35,6 @@ builder.Services.AddRazorPages()
         options.Conventions.AuthorizeFolder("/Admin", "RequireAdmins");
     });
 
-builder.Services.AddIdentity<IdentityUser, IdentityRole>(
-        options =>
-        {
-            options.Stores.MaxLengthForKeys = 128;
-        })
-    .AddEntityFrameworkStores<EarlsBurgerContext>()
-    .AddRoles<IdentityRole>()
-    .AddDefaultUI()
-    .AddDefaultTokenProviders();
 
 var app = builder.Build(); 
 
@@ -48,9 +51,19 @@ else
     app.UseMigrationsEndPoint();
 }
 
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    var context = services.GetRequiredService<EarlsBurgerContext>();
+    context.Database.EnsureCreated();
+}
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
 app.UseRouting();
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapRazorPages();
 using (var scope = app.Services.CreateScope())
 {
@@ -61,5 +74,4 @@ using (var scope = app.Services.CreateScope())
     var roleMgr = services.GetRequiredService<RoleManager<IdentityRole>>();
     IdentitySeedData.Initialize(context, userMgr, roleMgr).Wait();
 }
-app.UseAuthorization();
 app.Run();
