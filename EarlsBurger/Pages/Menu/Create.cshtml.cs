@@ -40,7 +40,7 @@ namespace EarlsBurger.Pages.Menu
                 MemoryStream ms = new MemoryStream();
                 file.CopyTo(ms);
                 FoodItem.ImageData = ms.ToArray();
-                
+               
                 ms.Close();
                 ms.Dispose();
             }

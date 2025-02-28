@@ -31,16 +31,6 @@ var inAdminRole = User.IsInRole("Admin");
             </tr>
             </thead>
             <tbody>
-            @foreach (var tblFoodItems in Model.FoodItem)
-            {
-                <tr>
-                    <td>@tblFoodItems.ID</td>
-                    <td><img src="~/images/@(tblFoodItems.Item_name).jpeg" alt="@tblFoodItems.Item_name"></td>
-                    <td>@tblFoodItems.Item_name</td>
-                    <td>@tblFoodItems.Item_desc</td>
-                    <td>@tblFoodItems.Price</td>
-                </tr>
-            }
             <tr>
                 <td>BRG001</td>
                 <td><img src="~/images/Cheeseburger.jpeg" alt="Earls Cheeseburger"></td>

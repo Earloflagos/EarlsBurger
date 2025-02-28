@@ -1,0 +1,73 @@
+@page
+@model EarlsBurger.Pages.MenuU.MenuU
+
+@{
+ViewData["Title"] = "MenuItem";
+}
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodItem[0].Item_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model=> model.FoodItem[0].Item_desc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodItem[0].Available)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodItem[0].Vegetarian)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodItem[0].Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodItem[0].ImageData)
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.FoodItem)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Item_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Item_desc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Available)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vegetarian)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            @{
+                try
+                {
+                    <td>
+                        <img src="@string.Format("data:image/jpg;base64,{0}", Convert.ToBase64String(item.ImageData))" alt="@item.ImageDescription"/>
+                    </td>
+                }
+                catch
+                {
+                    <td>
+                        <img class="img-thumb" src="/images/no-image.png" alt="No Image Provided"/>
+                    </td>
+                }
+            }
+            <td>
+                <button type="submit" asp-page-handler="Buy" asp-route-itemID="@item.ID">
+                    Add To Basket
+                </button>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -64,7 +64,7 @@ namespace EarlsBurger.Pages.Menu
                 }
                 catch(DbUpdateConcurrencyException e)
                 {
-                    throw new Exception($"Basket not found!", e);
+                    throw new Exception($"Basket not found!", e); 
                 }
             }
 

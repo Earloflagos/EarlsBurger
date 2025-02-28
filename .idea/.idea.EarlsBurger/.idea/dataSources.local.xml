@@ -2,7 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="RD-242.22855.90">
     <data-source name="db_2200680_earlsburger@mssql.chester.network" uuid="1a92bbf3-da95-426d-ae57-2e7bf6775574">
-      <database-info product="Microsoft SQL Server" version="15.00.4395" jdbc-version="4.2" driver-name="JetBrains JDBC Driver for SQL Server" driver-version="1.0" dbms="MSSQL" exact-version="15.0.4395" exact-driver-version="1.0">
+      <database-info product="Microsoft SQL Server" version="15.00.4410" jdbc-version="4.2" driver-name="JetBrains JDBC Driver for SQL Server" driver-version="1.0" dbms="MSSQL" exact-version="15.0.4410" exact-driver-version="1.0">
         <extra-name-characters>$#@</extra-name-characters>
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>

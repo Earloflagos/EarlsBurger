@@ -9,7 +9,7 @@ public class CheckoutItem
     public decimal Price { get; set; }
     [Required, StringLength(50)]
     public string Item_Name { get; set; }
-    [Required]
-    public int Quantity { get; set; }
-    
+
+    [Required] public int Quantity { get; set; }    
+
 }

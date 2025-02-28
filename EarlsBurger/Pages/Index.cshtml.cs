@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EarlsBurger.Pages
 {
-   // [Authorize(Roles = "Member, Admin")] 
+    [Authorize ] 
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;

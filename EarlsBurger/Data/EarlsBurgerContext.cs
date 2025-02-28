@@ -60,6 +60,7 @@ namespace EarlsBurger.Data
             modelBuilder.Entity<FoodItem>().ToTable("Fooditem");
             
             modelBuilder.Entity<BasketItem>().HasKey(t => new { t.StockID, t.BasketID });
-        }
+            modelBuilder.Entity<OrderItems>().HasKey(t => new { t.StockID, t.OrderNo });
+       }
     }
 }

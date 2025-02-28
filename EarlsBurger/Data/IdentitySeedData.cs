@@ -4,7 +4,7 @@ namespace EarlsBurger.Data
 {
     public class IdentitySeedData
     {
-            public static async Task Initialize(EarlsBurgerContext context,
+        public static async Task Initialize(EarlsBurgerContext context,
             UserManager<IdentityUser> userManager,
             RoleManager<IdentityRole> roleManager)
         {
@@ -31,10 +31,9 @@ namespace EarlsBurger.Data
                     Email = "admin@ucm.ac.im",
                     PhoneNumber = "06124 648200"
                 };
-                var result = await userManager.CreateAsync(user);
+                var result = await userManager.CreateAsync(user, password4all);
                 if (result.Succeeded)
                 {
-                    await userManager.AddPasswordAsync(user, password4all);
                     await userManager.AddToRoleAsync(user, adminRole);
                 }
             }

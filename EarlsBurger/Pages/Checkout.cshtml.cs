@@ -6,7 +6,7 @@ using EarlsBurger.Models;
 
 namespace EarlsBurger.Pages;
 
-public class Checkout : PageModel
+public class CheckoutModel : PageModel
 {
    private readonly EarlsBurgerContext _db;
    private readonly UserManager<IdentityUser> _UserManager;
@@ -15,14 +15,14 @@ public class Checkout : PageModel
    public decimal Total;
    public long AmountPayable;
 
-   public Checkout(EarlsBurgerContext db, UserManager<IdentityUser> UserManager)
+   public CheckoutModel(EarlsBurgerContext db, UserManager<IdentityUser> UserManager)
    {
       _db = db;
       _UserManager = UserManager;
    }
 
    public async Task OnGetAsync()
-   {
+  {
       var user = await _UserManager.GetUserAsync(User);
       EarlsBurgerContext.CheckoutCustomer customer = await _db.CheckoutCustomers.FindAsync(user.Email);
       Items = _db.CheckoutItems.FromSqlRaw(

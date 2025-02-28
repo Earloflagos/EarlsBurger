@@ -8,7 +8,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9527957-1aac-41dd-a1f2-4ae3818add82" name="Changes" comment="" />
+    <list default="true" id="b9527957-1aac-41dd-a1f2-4ae3818add82" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/EarlsBurger/Pages/MenuU.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EarlsBurger/Pages/MenuU.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EarlsBurger/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EarlsBurger/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EarlsBurger/.idea/dataSources/1a92bbf3-da95-426d-ae57-2e7bf6775574.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EarlsBurger/.idea/dataSources/1a92bbf3-da95-426d-ae57-2e7bf6775574.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EarlsBurger/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EarlsBurger/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Data/EarlsBurgerContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Data/EarlsBurgerContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Data/IdentitySeedData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Data/IdentitySeedData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Models/Basket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Data/Basket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Models/BasketItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Data/BasketItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Models/CheckoutCustomer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Data/CheckoutCustomer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Models/CheckoutItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Data/CheckoutItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Models/Fooditem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Models/Fooditem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Admin/index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Admin/index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Checkout.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Checkout.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Index.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Menu/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Menu/Create.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Menu/Create.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Menu/Create.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Menu/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Menu/Index.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Privacy.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Privacy.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Privacy.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Privacy.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/Pages/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EarlsBurger/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/EarlsBurger/wwwroot/css/site.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +58,9 @@
   }
 }</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -42,29 +70,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.EarlsBurger: http.executor": "Run",
-    ".NET Launch Settings Profile.EarlsBurger: https.executor": "Run",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Publish to custom server.Publish EarlsBurger to custom server (1).executor": "Run",
-    "Publish to custom server.Publish EarlsBurger to custom server (2).executor": "Run",
-    "Publish to custom server.Publish EarlsBurger to custom server.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.EarlsBurger: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.EarlsBurger: https.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Publish to custom server.Publish EarlsBurger to custom server (1).executor&quot;: &quot;Run&quot;,
+    &quot;Publish to custom server.Publish EarlsBurger to custom server (2).executor&quot;: &quot;Run&quot;,
+    &quot;Publish to custom server.Publish EarlsBurger to custom server.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RiderProblemsViewState">
     <option name="showPreview" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.EarlsBurger: http">
+  <component name="RunManager" selected=".NET Launch Settings Profile.EarlsBurger: https">
     <configuration name="Publish EarlsBurger to custom server (1)" type="DotNetPublishAndUpload" factoryName="Publish to custom server">
       <riderPublish configuration="Release" platform="Any CPU" runtime="Portable" server_id="007fc9fc-0220-4571-9a7a-a557dd90906f" serverName="plesk.chester.network" target_framework="net8.0" uuid_high="1192945277166371977" uuid_low="-6400116188168267243" />
       <method v="2" />
@@ -128,6 +156,11 @@
       <workItem from="1739974794795" duration="5501000" />
       <workItem from="1739980320822" duration="1016000" />
       <workItem from="1740060707711" duration="10748000" />
+      <workItem from="1740074299036" duration="1004000" />
+      <workItem from="1740408189058" duration="31423000" />
+      <workItem from="1740673011290" duration="2169000" />
+      <workItem from="1740675368636" duration="5367000" />
+      <workItem from="1740681161250" duration="3904000" />
     </task>
     <task id="LOCAL-00001" summary="layout edit">
       <option name="closed" value="true" />

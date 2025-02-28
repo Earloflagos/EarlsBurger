@@ -16732,8 +16732,8 @@
     </schema>
     <schema id="5551" parent="5510" name="dbo">
       <Current>1</Current>
-      <IntrospectionTimestamp>2024-10-25.14:50:58.597</IntrospectionTimestamp>
-      <LastIntrospectionLocalTimestamp>2024-10-25.12:50:58</LastIntrospectionLocalTimestamp>
+      <IntrospectionTimestamp>2025-02-27.13:54:35.097</IntrospectionTimestamp>
+      <LastIntrospectionLocalTimestamp>2025-02-27.13:54:34</LastIntrospectionLocalTimestamp>
       <ObjectId>1</ObjectId>
     </schema>
     <schema id="5552" parent="5510" name="guest">
@@ -16742,15 +16742,111 @@
     <schema id="5553" parent="5510" name="sys">
       <ObjectId>4</ObjectId>
     </schema>
-    <table id="5554" parent="5551" name="Fooditem">
-      <CreatedTimestamp>2024-10-25.14:09:39.740</CreatedTimestamp>
+    <table id="5554" parent="5551" name="AspNetRoleClaims">
+      <CreatedTimestamp>2025-02-12.11:01:56.343</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2025-02-18.14:42:06.803</ModifiedTimestamp>
-      <ObjectId>901578250</ObjectId>
+      <ModifiedTimestamp>2025-02-12.11:01:56.493</ModifiedTimestamp>
+      <ObjectId>1269579561</ObjectId>
+      <LedgerViewId>0</LedgerViewId>
+      <LobDataSpaceId>1</LobDataSpaceId>
+    </table>
+    <table id="5555" parent="5551" name="AspNetRoles">
+      <CreatedTimestamp>2025-02-12.11:01:56.270</CreatedTimestamp>
+      <DataRetentionPeriod>-1</DataRetentionPeriod>
+      <ModifiedTimestamp>2025-02-12.11:01:56.513</ModifiedTimestamp>
+      <ObjectId>1205579333</ObjectId>
+      <LedgerViewId>0</LedgerViewId>
+      <LobDataSpaceId>1</LobDataSpaceId>
+    </table>
+    <table id="5556" parent="5551" name="AspNetUserClaims">
+      <CreatedTimestamp>2025-02-12.11:01:56.370</CreatedTimestamp>
+      <DataRetentionPeriod>-1</DataRetentionPeriod>
+      <ModifiedTimestamp>2025-02-12.11:01:56.537</ModifiedTimestamp>
+      <ObjectId>1317579732</ObjectId>
+      <LedgerViewId>0</LedgerViewId>
+      <LobDataSpaceId>1</LobDataSpaceId>
+    </table>
+    <table id="5557" parent="5551" name="AspNetUserLogins">
+      <CreatedTimestamp>2025-02-12.11:01:56.400</CreatedTimestamp>
+      <DataRetentionPeriod>-1</DataRetentionPeriod>
+      <ModifiedTimestamp>2025-02-12.11:01:56.560</ModifiedTimestamp>
+      <ObjectId>1365579903</ObjectId>
+      <LedgerViewId>0</LedgerViewId>
+      <LobDataSpaceId>1</LobDataSpaceId>
+    </table>
+    <table id="5558" parent="5551" name="AspNetUserRoles">
+      <CreatedTimestamp>2025-02-12.11:01:56.427</CreatedTimestamp>
+      <DataRetentionPeriod>-1</DataRetentionPeriod>
+      <ModifiedTimestamp>2025-02-12.11:01:56.577</ModifiedTimestamp>
+      <ObjectId>1413580074</ObjectId>
       <LedgerViewId>0</LedgerViewId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
-    <table id="5555" parent="5551" name="__EFMigrationsHistory">
+    <table id="5559" parent="5551" name="AspNetUserTokens">
+      <CreatedTimestamp>2025-02-12.11:01:56.463</CreatedTimestamp>
+      <DataRetentionPeriod>-1</DataRetentionPeriod>
+      <ModifiedTimestamp>2025-02-12.11:01:56.463</ModifiedTimestamp>
+      <ObjectId>1477580302</ObjectId>
+      <LedgerViewId>0</LedgerViewId>
+      <LobDataSpaceId>1</LobDataSpaceId>
+    </table>
+    <table id="5560" parent="5551" name="AspNetUsers">
+      <CreatedTimestamp>2025-02-12.11:01:56.307</CreatedTimestamp>
+      <DataRetentionPeriod>-1</DataRetentionPeriod>
+      <ModifiedTimestamp>2025-02-12.11:01:56.627</ModifiedTimestamp>
+      <ObjectId>1237579447</ObjectId>
+      <LedgerViewId>0</LedgerViewId>
+      <LobDataSpaceId>1</LobDataSpaceId>
+    </table>
+    <table id="5561" parent="5551" name="BasketItems">
+      <CreatedTimestamp>2025-02-19.16:39:11.480</CreatedTimestamp>
+      <DataRetentionPeriod>-1</DataRetentionPeriod>
+      <ModifiedTimestamp>2025-02-19.16:44:40.560</ModifiedTimestamp>
+      <ObjectId>1589580701</ObjectId>
+      <LedgerViewId>0</LedgerViewId>
+      <LobDataSpaceId>0</LobDataSpaceId>
+    </table>
+    <table id="5562" parent="5551" name="Baskets">
+      <CreatedTimestamp>2025-02-19.16:39:11.473</CreatedTimestamp>
+      <DataRetentionPeriod>-1</DataRetentionPeriod>
+      <ModifiedTimestamp>2025-02-19.16:44:40.560</ModifiedTimestamp>
+      <ObjectId>1557580587</ObjectId>
+      <LedgerViewId>0</LedgerViewId>
+      <LobDataSpaceId>0</LobDataSpaceId>
+    </table>
+    <table id="5563" parent="5551" name="CheckoutCustomers">
+      <CreatedTimestamp>2025-02-19.16:39:11.463</CreatedTimestamp>
+      <DataRetentionPeriod>-1</DataRetentionPeriod>
+      <ModifiedTimestamp>2025-02-20.16:43:01.753</ModifiedTimestamp>
+      <ObjectId>1525580473</ObjectId>
+      <LedgerViewId>0</LedgerViewId>
+      <LobDataSpaceId>0</LobDataSpaceId>
+    </table>
+    <table id="5564" parent="5551" name="Fooditem">
+      <CreatedTimestamp>2024-10-25.14:09:39.740</CreatedTimestamp>
+      <DataRetentionPeriod>-1</DataRetentionPeriod>
+      <ModifiedTimestamp>2025-02-27.17:11:46.253</ModifiedTimestamp>
+      <ObjectId>901578250</ObjectId>
+      <LedgerViewId>0</LedgerViewId>
+      <LobDataSpaceId>1</LobDataSpaceId>
+    </table>
+    <table id="5565" parent="5551" name="OrderHistories">
+      <CreatedTimestamp>2025-02-20.16:43:01.750</CreatedTimestamp>
+      <DataRetentionPeriod>-1</DataRetentionPeriod>
+      <ModifiedTimestamp>2025-02-20.16:45:19.363</ModifiedTimestamp>
+      <ObjectId>1701581100</ObjectId>
+      <LedgerViewId>0</LedgerViewId>
+      <LobDataSpaceId>0</LobDataSpaceId>
+    </table>
+    <table id="5566" parent="5551" name="OrderItems">
+      <CreatedTimestamp>2025-02-20.16:45:19.360</CreatedTimestamp>
+      <DataRetentionPeriod>-1</DataRetentionPeriod>
+      <ModifiedTimestamp>2025-02-20.16:45:19.360</ModifiedTimestamp>
+      <ObjectId>1749581271</ObjectId>
+      <LedgerViewId>0</LedgerViewId>
+      <LobDataSpaceId>0</LobDataSpaceId>
+    </table>
+    <table id="5567" parent="5551" name="__EFMigrationsHistory">
       <CreatedTimestamp>2024-10-25.14:30:17.207</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
       <ModifiedTimestamp>2024-10-25.14:30:17.207</ModifiedTimestamp>
@@ -16758,72 +16854,617 @@
       <LedgerViewId>0</LedgerViewId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
-    <column id="5556" parent="5554" name="ID">
+    <column id="5568" parent="5554" name="Id">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1(2002)</SequenceIdentity>
+      <SequenceIdentity>1</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5557" parent="5554" name="Item_name">
+    <column id="5569" parent="5554" name="RoleId">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>nvarchar(450 char)|0s</StoredType>
+    </column>
+    <column id="5570" parent="5554" name="ClaimType">
+      <Position>3</Position>
+      <StoredType>nvarchar(max)|0s</StoredType>
+    </column>
+    <column id="5571" parent="5554" name="ClaimValue">
+      <Position>4</Position>
+      <StoredType>nvarchar(max)|0s</StoredType>
+    </column>
+    <foreign-key id="5572" parent="5554" name="FK_AspNetRoleClaims_AspNetRoles_RoleId">
+      <ColNames>RoleId</ColNames>
+      <CreatedTimestamp>2025-02-12.11:01:56.347</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-12.11:01:56.347</ModifiedTimestamp>
+      <ObjectId>1301579675</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>Id</RefColNames>
+      <RefTableId>1205579333</RefTableId>
+      <RefTableName>AspNetRoles</RefTableName>
+    </foreign-key>
+    <index id="5573" parent="5554" name="PK_AspNetRoleClaims">
+      <Clustering>1</Clustering>
+      <ColNames>Id</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <index id="5574" parent="5554" name="IX_AspNetRoleClaims_RoleId">
+      <ColNames>RoleId</ColNames>
+      <Position>2</Position>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="5575" parent="5554" name="PK_AspNetRoleClaims">
+      <CreatedTimestamp>2025-02-12.11:01:56.347</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-12.11:01:56.347</ModifiedTimestamp>
+      <ObjectId>1285579618</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_AspNetRoleClaims</UnderlyingIndexName>
+    </key>
+    <column id="5576" parent="5555" name="Id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>nvarchar(450 char)|0s</StoredType>
+    </column>
+    <column id="5577" parent="5555" name="Name">
+      <Position>2</Position>
+      <StoredType>nvarchar(256 char)|0s</StoredType>
+    </column>
+    <column id="5578" parent="5555" name="NormalizedName">
+      <Position>3</Position>
+      <StoredType>nvarchar(256 char)|0s</StoredType>
+    </column>
+    <column id="5579" parent="5555" name="ConcurrencyStamp">
+      <Position>4</Position>
+      <StoredType>nvarchar(max)|0s</StoredType>
+    </column>
+    <index id="5580" parent="5555" name="PK_AspNetRoles">
+      <Clustering>1</Clustering>
+      <ColNames>Id</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <index id="5581" parent="5555" name="RoleNameIndex">
+      <ColNames>NormalizedName</ColNames>
+      <Condition>[NormalizedName] IS NOT NULL</Condition>
+      <Position>2</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="5582" parent="5555" name="PK_AspNetRoles">
+      <CreatedTimestamp>2025-02-12.11:01:56.277</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-12.11:01:56.277</ModifiedTimestamp>
+      <ObjectId>1221579390</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_AspNetRoles</UnderlyingIndexName>
+    </key>
+    <column id="5583" parent="5556" name="Id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="5584" parent="5556" name="UserId">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>nvarchar(450 char)|0s</StoredType>
+    </column>
+    <column id="5585" parent="5556" name="ClaimType">
+      <Position>3</Position>
+      <StoredType>nvarchar(max)|0s</StoredType>
+    </column>
+    <column id="5586" parent="5556" name="ClaimValue">
+      <Position>4</Position>
+      <StoredType>nvarchar(max)|0s</StoredType>
+    </column>
+    <foreign-key id="5587" parent="5556" name="FK_AspNetUserClaims_AspNetUsers_UserId">
+      <ColNames>UserId</ColNames>
+      <CreatedTimestamp>2025-02-12.11:01:56.373</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-12.11:01:56.373</ModifiedTimestamp>
+      <ObjectId>1349579846</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>Id</RefColNames>
+      <RefTableId>1237579447</RefTableId>
+      <RefTableName>AspNetUsers</RefTableName>
+    </foreign-key>
+    <index id="5588" parent="5556" name="PK_AspNetUserClaims">
+      <Clustering>1</Clustering>
+      <ColNames>Id</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <index id="5589" parent="5556" name="IX_AspNetUserClaims_UserId">
+      <ColNames>UserId</ColNames>
+      <Position>2</Position>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="5590" parent="5556" name="PK_AspNetUserClaims">
+      <CreatedTimestamp>2025-02-12.11:01:56.373</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-12.11:01:56.373</ModifiedTimestamp>
+      <ObjectId>1333579789</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_AspNetUserClaims</UnderlyingIndexName>
+    </key>
+    <column id="5591" parent="5557" name="LoginProvider">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>nvarchar(128 char)|0s</StoredType>
+    </column>
+    <column id="5592" parent="5557" name="ProviderKey">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>nvarchar(128 char)|0s</StoredType>
+    </column>
+    <column id="5593" parent="5557" name="ProviderDisplayName">
+      <Position>3</Position>
+      <StoredType>nvarchar(max)|0s</StoredType>
+    </column>
+    <column id="5594" parent="5557" name="UserId">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>nvarchar(450 char)|0s</StoredType>
+    </column>
+    <foreign-key id="5595" parent="5557" name="FK_AspNetUserLogins_AspNetUsers_UserId">
+      <ColNames>UserId</ColNames>
+      <CreatedTimestamp>2025-02-12.11:01:56.400</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-12.11:01:56.400</ModifiedTimestamp>
+      <ObjectId>1397580017</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>Id</RefColNames>
+      <RefTableId>1237579447</RefTableId>
+      <RefTableName>AspNetUsers</RefTableName>
+    </foreign-key>
+    <index id="5596" parent="5557" name="PK_AspNetUserLogins">
+      <Clustering>1</Clustering>
+      <ColNames>LoginProvider
+ProviderKey</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <index id="5597" parent="5557" name="IX_AspNetUserLogins_UserId">
+      <ColNames>UserId</ColNames>
+      <Position>2</Position>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="5598" parent="5557" name="PK_AspNetUserLogins">
+      <CreatedTimestamp>2025-02-12.11:01:56.400</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-12.11:01:56.400</ModifiedTimestamp>
+      <ObjectId>1381579960</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_AspNetUserLogins</UnderlyingIndexName>
+    </key>
+    <column id="5599" parent="5558" name="UserId">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>nvarchar(450 char)|0s</StoredType>
+    </column>
+    <column id="5600" parent="5558" name="RoleId">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>nvarchar(450 char)|0s</StoredType>
+    </column>
+    <foreign-key id="5601" parent="5558" name="FK_AspNetUserRoles_AspNetUsers_UserId">
+      <ColNames>UserId</ColNames>
+      <CreatedTimestamp>2025-02-12.11:01:56.427</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-12.11:01:56.427</ModifiedTimestamp>
+      <ObjectId>1461580245</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>Id</RefColNames>
+      <RefTableId>1237579447</RefTableId>
+      <RefTableName>AspNetUsers</RefTableName>
+    </foreign-key>
+    <foreign-key id="5602" parent="5558" name="FK_AspNetUserRoles_AspNetRoles_RoleId">
+      <ColNames>RoleId</ColNames>
+      <CreatedTimestamp>2025-02-12.11:01:56.427</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-12.11:01:56.427</ModifiedTimestamp>
+      <ObjectId>1445580188</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>Id</RefColNames>
+      <RefTableId>1205579333</RefTableId>
+      <RefTableName>AspNetRoles</RefTableName>
+    </foreign-key>
+    <index id="5603" parent="5558" name="PK_AspNetUserRoles">
+      <Clustering>1</Clustering>
+      <ColNames>UserId
+RoleId</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <index id="5604" parent="5558" name="IX_AspNetUserRoles_RoleId">
+      <ColNames>RoleId</ColNames>
+      <Position>2</Position>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="5605" parent="5558" name="PK_AspNetUserRoles">
+      <CreatedTimestamp>2025-02-12.11:01:56.427</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-12.11:01:56.427</ModifiedTimestamp>
+      <ObjectId>1429580131</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_AspNetUserRoles</UnderlyingIndexName>
+    </key>
+    <column id="5606" parent="5559" name="UserId">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>nvarchar(450 char)|0s</StoredType>
+    </column>
+    <column id="5607" parent="5559" name="LoginProvider">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>nvarchar(128 char)|0s</StoredType>
+    </column>
+    <column id="5608" parent="5559" name="Name">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>nvarchar(128 char)|0s</StoredType>
+    </column>
+    <column id="5609" parent="5559" name="Value">
+      <Position>4</Position>
+      <StoredType>nvarchar(max)|0s</StoredType>
+    </column>
+    <foreign-key id="5610" parent="5559" name="FK_AspNetUserTokens_AspNetUsers_UserId">
+      <ColNames>UserId</ColNames>
+      <CreatedTimestamp>2025-02-12.11:01:56.467</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-12.11:01:56.467</ModifiedTimestamp>
+      <ObjectId>1509580416</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>Id</RefColNames>
+      <RefTableId>1237579447</RefTableId>
+      <RefTableName>AspNetUsers</RefTableName>
+    </foreign-key>
+    <index id="5611" parent="5559" name="PK_AspNetUserTokens">
+      <Clustering>1</Clustering>
+      <ColNames>UserId
+LoginProvider
+Name</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="5612" parent="5559" name="PK_AspNetUserTokens">
+      <CreatedTimestamp>2025-02-12.11:01:56.467</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-12.11:01:56.467</ModifiedTimestamp>
+      <ObjectId>1493580359</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_AspNetUserTokens</UnderlyingIndexName>
+    </key>
+    <column id="5613" parent="5560" name="Id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>nvarchar(450 char)|0s</StoredType>
+    </column>
+    <column id="5614" parent="5560" name="UserName">
+      <Position>2</Position>
+      <StoredType>nvarchar(256 char)|0s</StoredType>
+    </column>
+    <column id="5615" parent="5560" name="NormalizedUserName">
+      <Position>3</Position>
+      <StoredType>nvarchar(256 char)|0s</StoredType>
+    </column>
+    <column id="5616" parent="5560" name="Email">
+      <Position>4</Position>
+      <StoredType>nvarchar(256 char)|0s</StoredType>
+    </column>
+    <column id="5617" parent="5560" name="NormalizedEmail">
+      <Position>5</Position>
+      <StoredType>nvarchar(256 char)|0s</StoredType>
+    </column>
+    <column id="5618" parent="5560" name="EmailConfirmed">
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>bit|0s</StoredType>
+    </column>
+    <column id="5619" parent="5560" name="PasswordHash">
+      <Position>7</Position>
+      <StoredType>nvarchar(max)|0s</StoredType>
+    </column>
+    <column id="5620" parent="5560" name="SecurityStamp">
+      <Position>8</Position>
+      <StoredType>nvarchar(max)|0s</StoredType>
+    </column>
+    <column id="5621" parent="5560" name="ConcurrencyStamp">
+      <Position>9</Position>
+      <StoredType>nvarchar(max)|0s</StoredType>
+    </column>
+    <column id="5622" parent="5560" name="PhoneNumber">
+      <Position>10</Position>
+      <StoredType>nvarchar(max)|0s</StoredType>
+    </column>
+    <column id="5623" parent="5560" name="PhoneNumberConfirmed">
+      <NotNull>1</NotNull>
+      <Position>11</Position>
+      <StoredType>bit|0s</StoredType>
+    </column>
+    <column id="5624" parent="5560" name="TwoFactorEnabled">
+      <NotNull>1</NotNull>
+      <Position>12</Position>
+      <StoredType>bit|0s</StoredType>
+    </column>
+    <column id="5625" parent="5560" name="LockoutEnd">
+      <Position>13</Position>
+      <StoredType>datetimeoffset|0s</StoredType>
+    </column>
+    <column id="5626" parent="5560" name="LockoutEnabled">
+      <NotNull>1</NotNull>
+      <Position>14</Position>
+      <StoredType>bit|0s</StoredType>
+    </column>
+    <column id="5627" parent="5560" name="AccessFailedCount">
+      <NotNull>1</NotNull>
+      <Position>15</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <index id="5628" parent="5560" name="PK_AspNetUsers">
+      <Clustering>1</Clustering>
+      <ColNames>Id</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <index id="5629" parent="5560" name="EmailIndex">
+      <ColNames>NormalizedEmail</ColNames>
+      <Position>2</Position>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <index id="5630" parent="5560" name="UserNameIndex">
+      <ColNames>NormalizedUserName</ColNames>
+      <Condition>[NormalizedUserName] IS NOT NULL</Condition>
+      <Position>3</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="5631" parent="5560" name="PK_AspNetUsers">
+      <CreatedTimestamp>2025-02-12.11:01:56.310</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-12.11:01:56.310</ModifiedTimestamp>
+      <ObjectId>1253579504</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_AspNetUsers</UnderlyingIndexName>
+    </key>
+    <column id="5632" parent="5561" name="StockID">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="5633" parent="5561" name="BasketID">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="5634" parent="5561" name="Quantity">
+      <Position>3</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <foreign-key id="5635" parent="5561" name="FK__BasketIte__Baske__6477ECF3">
+      <ColNames>BasketID</ColNames>
+      <CreatedTimestamp>2025-02-19.16:44:40.560</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-19.16:44:40.560</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1685581043</ObjectId>
+      <RefColNames>BasketID</RefColNames>
+      <RefTableId>1557580587</RefTableId>
+      <RefTableName>Baskets</RefTableName>
+    </foreign-key>
+    <index id="5636" parent="5561" name="PK_StockBasket">
+      <Clustering>1</Clustering>
+      <ColNames>StockID
+BasketID</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="5637" parent="5561" name="PK_StockBasket">
+      <CreatedTimestamp>2025-02-19.16:39:11.487</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-19.16:39:11.487</ModifiedTimestamp>
+      <ObjectId>1605580758</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_StockBasket</UnderlyingIndexName>
+    </key>
+    <column id="5638" parent="5562" name="BasketID">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <index id="5639" parent="5562" name="PK__Baskets__8FDA77D5BA1713E8">
+      <Clustering>1</Clustering>
+      <ColNames>BasketID</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="5640" parent="5562" name="PK__Baskets__8FDA77D5BA1713E8">
+      <CreatedTimestamp>2025-02-19.16:39:11.477</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-19.16:39:11.477</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1573580644</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__Baskets__8FDA77D5BA1713E8</UnderlyingIndexName>
+    </key>
+    <column id="5641" parent="5563" name="Email">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>varchar(20 char)|0s</StoredType>
+    </column>
+    <column id="5642" parent="5563" name="Name">
+      <Position>2</Position>
+      <StoredType>varchar(50 char)|0s</StoredType>
+    </column>
+    <column id="5643" parent="5563" name="BasketID">
+      <Position>3</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <index id="5644" parent="5563" name="PK__Checkout__A9D10535AB94A877">
+      <Clustering>1</Clustering>
+      <ColNames>Email</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="5645" parent="5563" name="PK__Checkout__A9D10535AB94A877">
+      <CreatedTimestamp>2025-02-19.16:39:11.467</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-19.16:39:11.467</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1541580530</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__Checkout__A9D10535AB94A877</UnderlyingIndexName>
+    </key>
+    <column id="5646" parent="5564" name="ID">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1(2012)</SequenceIdentity>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="5647" parent="5564" name="Item_name">
       <Position>2</Position>
       <StoredType>nvarchar(30 char)|0s</StoredType>
     </column>
-    <column id="5558" parent="5554" name="Item_desc">
+    <column id="5648" parent="5564" name="Item_desc">
       <Position>3</Position>
       <StoredType>nvarchar(255 char)|0s</StoredType>
     </column>
-    <column id="5559" parent="5554" name="Available">
+    <column id="5649" parent="5564" name="Available">
       <Position>4</Position>
       <StoredType>bit|0s</StoredType>
     </column>
-    <column id="5560" parent="5554" name="Vegetarian">
+    <column id="5650" parent="5564" name="Vegetarian">
       <Position>5</Position>
       <StoredType>bit|0s</StoredType>
     </column>
-    <column id="5561" parent="5554" name="Price">
+    <column id="5651" parent="5564" name="Price">
       <Position>6</Position>
       <StoredType>money|0s</StoredType>
     </column>
-    <column id="5562" parent="5554" name="ImageDescription">
+    <column id="5652" parent="5564" name="ImageDescription">
       <Position>7</Position>
       <StoredType>nvarchar(1 char)|0s</StoredType>
     </column>
-    <column id="5563" parent="5554" name="ImageData">
-      <Position>8</Position>
-      <StoredType>varbinary(1 char)|0s</StoredType>
+    <column id="5653" parent="5564" name="ImageData">
+      <Position>10</Position>
+      <StoredType>varbinary(max)|0s</StoredType>
     </column>
-    <index id="5564" parent="5554" name="PK_Fooditem">
+    <index id="5654" parent="5564" name="PK_Fooditem">
       <Clustering>1</Clustering>
       <ColNames>ID</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5565" parent="5554" name="PK_Fooditem">
+    <key id="5655" parent="5564" name="PK_Fooditem">
       <CreatedTimestamp>2024-10-25.14:09:39.747</CreatedTimestamp>
       <ModifiedTimestamp>2024-10-25.14:09:39.747</ModifiedTimestamp>
       <ObjectId>917578307</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_Fooditem</UnderlyingIndexName>
     </key>
-    <column id="5566" parent="5555" name="MigrationId">
+    <column id="5656" parent="5565" name="OrderNo">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="5657" parent="5565" name="Email">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(20 char)|0s</StoredType>
+    </column>
+    <foreign-key id="5658" parent="5565" name="FK__OrderHist__Email__6754599E">
+      <ColNames>Email</ColNames>
+      <CreatedTimestamp>2025-02-20.16:43:01.750</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-20.16:43:01.750</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1733581214</ObjectId>
+      <RefColNames>Email</RefColNames>
+      <RefTableId>1525580473</RefTableId>
+      <RefTableName>CheckoutCustomers</RefTableName>
+    </foreign-key>
+    <index id="5659" parent="5565" name="PK__OrderHis__C3907C74389712FE">
+      <Clustering>1</Clustering>
+      <ColNames>OrderNo</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="5660" parent="5565" name="PK__OrderHis__C3907C74389712FE">
+      <CreatedTimestamp>2025-02-20.16:43:01.750</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-20.16:43:01.750</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1717581157</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__OrderHis__C3907C74389712FE</UnderlyingIndexName>
+    </key>
+    <column id="5661" parent="5566" name="OrderNo">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="5662" parent="5566" name="StockID">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="5663" parent="5566" name="Quantity">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <foreign-key id="5664" parent="5566" name="FK__OrderItem__Order__6A30C649">
+      <ColNames>OrderNo</ColNames>
+      <CreatedTimestamp>2025-02-20.16:45:19.363</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-20.16:45:19.363</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1781581385</ObjectId>
+      <RefColNames>OrderNo</RefColNames>
+      <RefTableId>1701581100</RefTableId>
+      <RefTableName>OrderHistories</RefTableName>
+    </foreign-key>
+    <foreign-key id="5665" parent="5566" name="FK__OrderItem__Stock__6B24EA82">
+      <ColNames>StockID</ColNames>
+      <CreatedTimestamp>2025-02-20.16:45:19.363</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-20.16:45:19.363</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1797581442</ObjectId>
+      <RefColNames>ID</RefColNames>
+      <RefTableId>901578250</RefTableId>
+      <RefTableName>Fooditem</RefTableName>
+    </foreign-key>
+    <index id="5666" parent="5566" name="PK_Items">
+      <Clustering>1</Clustering>
+      <ColNames>OrderNo
+StockID</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="5667" parent="5566" name="PK_Items">
+      <CreatedTimestamp>2025-02-20.16:45:19.363</CreatedTimestamp>
+      <ModifiedTimestamp>2025-02-20.16:45:19.363</ModifiedTimestamp>
+      <ObjectId>1765581328</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_Items</UnderlyingIndexName>
+    </key>
+    <column id="5668" parent="5567" name="MigrationId">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>nvarchar(150 char)|0s</StoredType>
     </column>
-    <column id="5567" parent="5555" name="ProductVersion">
+    <column id="5669" parent="5567" name="ProductVersion">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>nvarchar(32 char)|0s</StoredType>
     </column>
-    <index id="5568" parent="5555" name="PK___EFMigrationsHistory">
+    <index id="5670" parent="5567" name="PK___EFMigrationsHistory">
       <Clustering>1</Clustering>
       <ColNames>MigrationId</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5569" parent="5555" name="PK___EFMigrationsHistory">
+    <key id="5671" parent="5567" name="PK___EFMigrationsHistory">
       <CreatedTimestamp>2024-10-25.14:30:17.210</CreatedTimestamp>
       <ModifiedTimestamp>2024-10-25.14:30:17.210</ModifiedTimestamp>
       <ObjectId>949578421</ObjectId>
